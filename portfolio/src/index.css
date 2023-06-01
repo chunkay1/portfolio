@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Barlow';
+}
+
+body {
+  margin: 0;
+  font-family: 'Barlow' 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* main color scheme: https://coolors.co/palette/282c34-e06c75-98c379-e5c07b-61afef-c678dd-56b6c2-abb2bf */

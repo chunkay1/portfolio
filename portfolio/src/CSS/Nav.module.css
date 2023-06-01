@@ -1,0 +1,33 @@
+.body {
+  border: 1px solid pink;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.nameAndTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.nav {
+  border: 1px solid red;
+}
+
+.headers {
+  font-weight: 400;
+  margin: 5px 10px;
+}
+
+.links {
+  font-size: small;
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+  transition: color 0.25s
+}
+
+.links:hover {
+  color: cornflowerblue;
+}
