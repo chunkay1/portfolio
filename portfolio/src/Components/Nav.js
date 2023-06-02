@@ -8,19 +8,21 @@ function Nav () {
       <div className={styles.body}>
 
         <div className={styles.nameAndTitle}>
-          <h2 className={styles.headers}>Fabian Hernandez</h2>
+          <h3 className={styles.headers}>Fabian Hernandez</h3>
           <h5 className={styles.headers}>Fullstack Engineer</h5>
         </div> 
 
-        <a 
-          className={styles.links} 
-          href={`${BASEURL}`}>Home</a>
-        <a 
-          className={styles.links} 
-          href={`${BASEURL}portfolio`}>Portfolio</a>
-        <a 
-          className={styles.links} 
-          href={`${BASEURL}contact`}>Contact</a>
+        <div className={styles.links}>
+          <a 
+            className={styles.link} 
+            href={`${BASEURL}`}>Home</a>
+          <a 
+            className={styles.link} 
+            href={`${BASEURL}portfolio`}>Portfolio</a>
+          <a 
+            className={styles.link} 
+            href={`${BASEURL}contact`}>Contact</a>
+        </div>
           
       </div>
     </nav>

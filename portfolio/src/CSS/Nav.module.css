@@ -1,8 +1,13 @@
+.nav {
+  width: 100vw;
+}
+
 .body {
   border: 1px solid pink;
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .nameAndTitle {
@@ -11,7 +16,7 @@
   align-items: baseline;
 }
 
-.nav {
+.links {
   border: 1px solid red;
 }
 
@@ -20,7 +25,7 @@
   margin: 5px 10px;
 }
 
-.links {
+.link {
   font-size: small;
   text-decoration: none;
   color: white;
@@ -28,6 +33,6 @@
   transition: color 0.25s
 }
 
-.links:hover {
+.link:hover {
   color: cornflowerblue;
 }

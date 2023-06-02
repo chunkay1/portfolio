@@ -1,0 +1,23 @@
+.main {
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.link {
+  /* font-size: small; */
+  text-decoration: none;
+  color: white;
+  /* margin: 0 5px; */
+  transition: color 0.25s
+}
+
+.link:hover {
+  color: cornflowerblue;
+}

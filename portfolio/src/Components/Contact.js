@@ -9,7 +9,7 @@ function Contact () {
 
       <form>
         <h2>Let's Connect!</h2>
-        <AiFillLinkedin />
+        <a href="https://www.linkedin.com/in/fabian-s-hernandez/" target="blank" className={styles.icon}> <AiFillLinkedin /> </a>
         
 
         <div className={styles.inputs}>

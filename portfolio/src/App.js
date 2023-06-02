@@ -3,6 +3,7 @@ import {Routes, Route} from 'react-router'
 import './App.css';
 import { Nav, Contact, Portfolio, Home} from './Components/index'
 
+
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,7 @@ function App() {
               <Nav />
             </header>
           
-            <main>
+            <main className="App-main">
               <Home />
             </main>
           </>
@@ -24,7 +25,7 @@ function App() {
             <header className="App-header">
               <Nav />
             </header>
-            <main>
+            <main className="App-main">
               <Portfolio />
 
               {/* <img src={logo} className="App-logo" alt="logo" />
@@ -51,7 +52,7 @@ function App() {
               <Nav />
             </header>
 
-            <main>
+            <main className="App-main">
               <Contact />
             </main>
 
