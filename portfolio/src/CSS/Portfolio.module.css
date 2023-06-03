@@ -1,0 +1,24 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 100px;
+}
+
+.body {
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: cornflowerblue;
+  margin: 0 5px;
+  transition: color 0.25s
+}
+
+.link:hover {
+  color: white;
+}
+
+.project {
+  height: 100vh;
+  scroll-snap-align: start;
+}
