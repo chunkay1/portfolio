@@ -32,6 +32,11 @@
   color: white;
   margin: 0;
   padding: 0;
+  width: 98.5vw;
+  position: fixed !important;
+  overflow: hidden;
+  top: 0;
+
 }
 
 .App-main {
