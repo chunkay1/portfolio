@@ -1,5 +1,5 @@
 .nav {
-  width: 98.5vw;
+  width: 100vw;
 }
 
 .body {
@@ -8,6 +8,7 @@
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
+  padding: 0 15px;
 }
 
 .nameAndTitle {

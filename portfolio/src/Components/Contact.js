@@ -1,6 +1,6 @@
 import React from "react";
 import styles from '../CSS/Contact.module.css'
-import { AiFillLinkedin } from "react-icons/ai"
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai"
 
 function Contact () {
   return (
@@ -8,8 +8,20 @@ function Contact () {
     <div className={styles.body}>
 
       <form>
-        <h2>Let's Connect!</h2>
-        <a href="https://www.linkedin.com/in/fabian-s-hernandez/" target="blank" className={styles.icon}> <AiFillLinkedin /> </a>
+        <h2 className={styles.header}>Let's Connect!</h2>
+        <a 
+          href="https://www.linkedin.com/in/fabian-s-hernandez/" 
+          target="blank" 
+          className={styles.icon}> 
+          <AiFillLinkedin /> 
+        </a>
+
+        <a 
+          href="https://github.com/chunkay1"
+          target="blank"
+          className={styles.icon}>
+            <AiFillGithub />
+        </a>
         
 
         <div className={styles.inputs}>
@@ -17,19 +29,40 @@ function Contact () {
             type='text'
             label='Name'
             placeholder='Name'
+            required='yes'
+            onInvalid= { (e) => {
+              e.target.setCustomValidity('Please Provide Your Name')
+            }}
+            onInput={(e) => {
+              e.target.setCustomValidity('');
+            }}
             className={styles.input}>
           </input>
           <input 
             type='email'
             label='Email'
             placeholder='Email'
+            required='yes'
+            onInvalid={(e) => {
+              e.target.setCustomValidity('Please Provide a Valid Email');
+            }}
+            onInput={(e) => {
+              e.target.setCustomValidity('');
+            }}
             className={styles.input}>
           </input>
           <textarea 
             type='text'
             label='Message'
             placeholder='Message'
+            onInvalid={(e) => {
+              e.target.setCustomValidity('Please Enter Your Message Here :)')
+            }}
+            onInput={(e) => {
+              e.target.setCustomValidity('');
+            }}
             maxLength="250"
+            required='yes'
             className={`${styles.message} ${styles.input}`}>
           </textarea>
         </div>
