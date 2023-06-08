@@ -3,6 +3,7 @@ import styles from '../CSS/Contact.module.css';
 import emailjs from '@emailjs/browser';
 // import { IconContext } from "react-icons/lib";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import toast, { Toaster } from 'react-hot-toast';
 
 function Contact () {
   const form = useRef();
@@ -14,7 +15,11 @@ function Contact () {
     return (event) => {
         callback(event.target.value)
     }
-}
+  }
+
+  const notify = () => {
+    toast('Email Sent!')
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,6 +27,7 @@ function Contact () {
     emailjs.sendForm('service_efywbnd', 'template_cbxgwfv', form.current, '9eW_xcLmN3UhfubAI')
       .then((result) => {
           console.log(result.text);
+          notify();
       }, (error) => {
           console.log(error.text);
       });
@@ -110,7 +116,18 @@ function Contact () {
         {/* <button className={styles.button} value='Send'>Submit</button> */}
 
       </form>
-
+      
+      <Toaster 
+         toastOptions={{
+          className: '',
+          style: {
+            border: '1px solid #282C34',
+            background: '#61AFEF',
+            padding: '8px',
+            color: '#282C34',
+          },
+        }}
+      />
     </div>
 
   )
