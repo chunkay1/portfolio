@@ -1,12 +1,12 @@
 html {
   scroll-snap-type: y mandatory;
-  scroll-padding-top: 100px;
 }
 
 .body {
   color: white;
-  margin-top: 7vh;
-  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .link {
@@ -23,4 +23,10 @@ html {
 .project {
   height: 100vh;
   scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45vw;
+  text-align: center;
 }

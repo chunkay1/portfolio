@@ -18,7 +18,8 @@ function Contact () {
   }
 
   const notify = () => {
-    toast('Email Sent!')
+    toast("Email Sent!")
+    toast("I'll get back to you ASAP.")
   }
 
   const sendEmail = (e) => {
