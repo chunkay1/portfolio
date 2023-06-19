@@ -1,6 +1,8 @@
 import React from "react";
 import styles from '../CSS/Portfolio.module.css'
 import { AiFillGithub } from "react-icons/ai";
+import { SiExpress, SiPostgresql, SiReact, SiCss3, SiJquery } from "react-icons/si"
+import { FaNodeJs, FaBootstrap } from "react-icons/fa"
 
 function Portfolio () {
   return (
@@ -28,12 +30,53 @@ function Portfolio () {
         <p> Accomplished by using React and Bootstrap for some persisting core components and grid layouts, a combination of vanilla CSS and jQuery for custom animations, Express and PostgreSQL to serve up our backend data, and finally BCRYPT as well as JSON web token to ensure our users data is stored securely and only accessible to properly authenticated users.</p>
 
         <div className={styles.technologies}>
-          <h5>React</h5>
+
+          <div>
+            {/* <h5>PostgreSQL</h5> */}
+            <SiPostgresql />
+          </div>
+
+          <div>
+            {/* <h5>Express</h5> */}
+            <SiExpress />
+          </div>
+
+          <div>
+            {/* <h5>React</h5> */}
+            <SiReact />
+          </div>
+
+          <div>
+            {/* <h5>Node JS</h5> */}
+            <FaNodeJs />
+          </div>
+
+          <div>
+            {/* <h5>CSS</h5> */}
+            <SiCss3 />
+          </div>
+
+          <div>
+            {/* <h5>Bootstrap</h5> */}
+            <FaBootstrap />
+          </div>
+
+          <div>
+            {/* <h5>jQuery</h5> */}
+            <SiJquery />
+          </div>
+
         </div>
 
-        <div className={styles.icon}>
-          <AiFillGithub />
+        <div>
+          <a
+            href="https://github.com/chunkay1/graceShopper"
+            target="none"
+            className={styles.icon}>
+            <AiFillGithub />
+          </a>
         </div>
+
       </section>
 
       <section className={styles.project}>
@@ -55,6 +98,23 @@ function Portfolio () {
         <br />
         
         <p>Overall, this project allowed me to apply my knowledge of React and API interactions to build a functional and responsive web application that simulates a popular online marketplace. I learned how to manage state and props in React, use hooks and libraries for enhanced functionality, and implement CRUD methods for data manipulation.</p>
+
+        <div className={styles.technologies}>
+          {/* <h5>React</h5> */}
+          <SiReact />
+
+          {/* <h5>CSS</h5> */}
+          <SiCss3 />
+        </div>
+
+        <div className={styles.icon}>
+          <a
+              href="https://github.com/chunkay1/graceShopper"
+              target="none"
+              className={styles.icon}>
+            <AiFillGithub />
+          </a>
+        </div>
       </section>
 
     </div>

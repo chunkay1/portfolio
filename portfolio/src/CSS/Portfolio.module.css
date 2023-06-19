@@ -30,3 +30,19 @@ html {
   width: 45vw;
   text-align: center;
 }
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-evenly;
+  margin: 8px;
+}
+
+.icon {
+  color: white;
+}
+
+.icon:visited {
+  color: white;
+}

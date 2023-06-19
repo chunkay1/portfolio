@@ -1,17 +1,20 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import {Routes, Route} from 'react-router'
 import './App.css';
-import { Nav, Contact, Portfolio, Home} from './Components/index'
+import { Nav, Contact, Portfolio, Home, Cursor} from './Components/index'
 
 
 function App() {
   return (
     <div className="App">
+
       <Routes>
         <Route exact path='/' element={
           <>
+            <Cursor />
             <header className="App-header">
-              <Nav />
+              <Cursor />
+              <Nav/>
             </header>
           
             <main className="App-main">
@@ -22,10 +25,12 @@ function App() {
         
         <Route path='/portfolio' element={
           <>
+            <Cursor />
             <header className="App-header">
               <Nav />
             </header>
             <main className="App-main">
+              <Cursor />
               <Portfolio />
 
               {/* <img src={logo} className="App-logo" alt="logo" />
@@ -48,11 +53,13 @@ function App() {
 
         <Route path='/contact' element={
           <>
+            <Cursor />
             <header className="App-header">
               <Nav />
             </header>
 
             <main className="App-main">
+              <Cursor />
               <Contact />
             </main>
 

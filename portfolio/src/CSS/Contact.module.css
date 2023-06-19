@@ -55,7 +55,7 @@
 }
 
 .button:hover {
-  cursor: pointer;
+  cursor: none;
   background-color: #282C34;
   color: #61AFEF;
   border: 1px solid #61AFEF;

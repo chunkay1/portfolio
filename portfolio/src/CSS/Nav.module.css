@@ -3,7 +3,7 @@
 }
 
 .body {
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -17,9 +17,9 @@
   align-items: baseline;
 }
 
-.links {
+/* .links {
   border: 1px solid red;
-}
+} */
 
 .headers {
   font-weight: 400;
