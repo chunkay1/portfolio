@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "../CSS/Nav.module.css"
 import { BASEURL } from "../Constants/constants";
+// import Cursor from "./Cursor";
 
 function Nav () {
   return (
     <nav className={styles.nav}>
+      
       <div className={styles.body}>
 
         <div className={styles.nameAndTitle}>

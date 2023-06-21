@@ -19,7 +19,7 @@ function Cursor () {
   const requestRef = useRef(null);
 
   useEffect(() => {
-    document.addEventListener('mousedown', mouseOverEvent);
+    document.addEventListener('mousedown', mouseDownEvent);
     document.addEventListener('mouseup', mouseOutEvent);
     document.addEventListener('mousemove', mouseMoveEvent);
     document.addEventListener('mouseenter', mouseEnterEvent);
@@ -51,12 +51,27 @@ function Cursor () {
   const toggleCursorSize = () => {
     if (cursorEnlarged.current) {
       dot.current.style.transform = 'translate(-50%, -50%) scale(0.75)';
-      dotOutline.current.style.transform = 'translate(-50%, -50%) scale(1.5)';
+      dotOutline.current.style.transform = 'translate(-50%, -50%) scale(1.25)';
     } else {
       dot.current.style.transform = 'translate(-50%, -50%) scale(1)';
       dotOutline.current.style.transform = 'translate(-50%, -50%) scale(1)';
     }
   };
+
+  const mouseDownSize = () => {
+    if (cursorEnlarged.current) {
+      dot.current.style.transform = 'translate(-50%, -50%) scale(0.7)';
+      dotOutline.current.style.transform = 'translate(-50%, -50%) scale(0.7)';
+    } else {
+      dot.current.style.transform = 'translate(-50%, -50%) scale(1)';
+      dotOutline.current.style.transform = 'translate(-50%, -50%) scale(1)';
+    }
+  };
+
+  const mouseDownEvent = () => {
+    cursorEnlarged.current = true;
+    mouseDownSize();
+  }
 
   const mouseOverEvent = () => {
     cursorEnlarged.current = true;
@@ -107,4 +122,7 @@ function Cursor () {
   )
 }
 
-export default Cursor
+export default Cursor;
+
+ 
+

@@ -11,9 +11,9 @@ function App() {
       <Routes>
         <Route exact path='/' element={
           <>
-            <Cursor />
+            {/* <Cursor /> */}
             <header className="App-header">
-              <Cursor />
+              {/* <Cursor /> */}
               <Nav/>
             </header>
           
@@ -60,7 +60,7 @@ function App() {
 
             <main className="App-main">
               <Cursor />
-              <Contact />
+              <Contact/>
             </main>
 
           </>

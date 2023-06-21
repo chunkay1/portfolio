@@ -38,6 +38,9 @@ function Contact () {
       setMessage('');
   }
 
+  var mouseOverEvent = require('./Cursor.js').mouseOverEvent
+  var mouseOutEvent = require('./Cursor.js').mouseOutEvent
+
   return (
     
     <div className={styles.body}>
@@ -47,7 +50,7 @@ function Contact () {
         <h2 className={styles.header}>Let's Connect!</h2>
         <a 
           href="https://www.linkedin.com/in/fabian-s-hernandez/" 
-          target="blank" 
+          target="blank"
           className={styles.icon}> 
           <AiFillLinkedin /> 
         </a>
@@ -113,7 +116,10 @@ function Contact () {
             className={`${styles.message} ${styles.input}`}>
           </textarea>
         </div>
-            <input type='submit' value='Submit' className={styles.button}/>
+            <input 
+              type='submit' 
+              value='Submit'
+              className={styles.button}/>
         {/* <button className={styles.button} value='Send'>Submit</button> */}
 
       </form>
