@@ -1,9 +1,12 @@
+// import logo from './logo.svg';
+import {Routes, Route} from 'react-router'
 import { useEffect, useRef } from 'react';
-import '../App.css'
-import { SiTarget } from 'react-icons/si';
+import './App.css';
+import { Nav, Contact, Portfolio, Home, Cursor} from './Components/index'
 
 
-function Cursor () {
+
+function App() {
   const delay = 18;
 
   const dot = useRef(null);
@@ -116,16 +119,60 @@ function Cursor () {
 
     requestRef.current = requestAnimationFrame(animateDotOutline);
   };
-
+  
   return (
-    <>
+    <div className="App">
+
       <div ref={dotOutline} className= "cursor-dot-outline"></div>
       <div ref={dot} className="cursor-dot"></div>
-    </>
-  )
+
+      <header className="App-header">
+        <Nav />
+      </header>
+
+      <Routes>
+        <Route exact path='/' element={
+          <>
+            <main className="App-main">
+              <Home />
+            </main>
+          </>
+        }/>
+        
+        <Route path='/portfolio' element={
+          <>
+            <main className="App-main">
+              <Portfolio />
+
+              {/* <img src={logo} className="App-logo" alt="logo" />
+
+              <p>
+                Edit <code>src/App.js</code> and save to reload.
+              </p>
+
+              <a
+                className="App-link"
+                href="https://reactjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn React
+              </a> */}
+            </main>
+          </>
+        }/>
+
+        <Route path='/contact' element={
+          <>
+            <main className="App-main">
+              <Contact/>
+            </main>
+          </>
+        }/>
+        
+      </Routes>
+    </div>
+  );
 }
 
-export default Cursor;
-
- 
-
+export default App;

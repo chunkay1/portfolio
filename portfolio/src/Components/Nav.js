@@ -3,7 +3,7 @@ import styles from "../CSS/Nav.module.css"
 import { BASEURL } from "../Constants/constants";
 // import Cursor from "./Cursor";
 
-function Nav () {
+function Nav ({mouseOverEvent, mouseOutEvent}) {
   return (
     <nav className={styles.nav}>
       
@@ -16,13 +16,19 @@ function Nav () {
 
         <div className={styles.links}>
           <a 
-            className={styles.link} 
+            className={styles.link}
+            onMouseOver={mouseOverEvent}
+            onMouseOut={mouseOutEvent} 
             href={`${BASEURL}`}>Home</a>
           <a 
-            className={styles.link} 
+            className={styles.link}
+            onMouseOver={mouseOverEvent}
+            onMouseOut={mouseOutEvent} 
             href={`${BASEURL}portfolio`}>Portfolio</a>
           <a 
-            className={styles.link} 
+            className={styles.link}
+            onMouseOver={mouseOverEvent}
+            onMouseOut={mouseOutEvent} 
             href={`${BASEURL}contact`}>Contact</a>
         </div>
           

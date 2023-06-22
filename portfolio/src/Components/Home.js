@@ -1,12 +1,10 @@
 import styles from '../CSS/Home.module.css'
 import { BASEURL } from '../Constants/constants';
-import Cursor from './Cursor';
 
 
-function Home() {
+function Home({mouseOverEvent, mouseOutEvent}) {
   return (
     <div className={styles.main}>
-      <Cursor />
 
       <h3>Welcome!</h3>
 
@@ -22,16 +20,16 @@ function Home() {
         Please feel free to browse my portfolio 
           <a 
             className={styles.link}
-            href={`${BASEURL}portfolio`}>
-            - here -
-          </a> 
+            onMouseOver={mouseOverEvent}
+            onMouseOut={mouseOutEvent}
+            href={`${BASEURL}portfolio`}> here </a> 
         
         and if you want to connect, please feel free to reach out using my 
           <a 
-            className={styles.link} 
-            href={`${BASEURL}contact`}>
-            contact page.
-          </a>
+            className={styles.link}
+            onMouseOver={mouseOverEvent}
+            onMouseOut={mouseOutEvent} 
+            href={`${BASEURL}contact`}> contact page.</a>
         </p>
 
         <h3>Education</h3>

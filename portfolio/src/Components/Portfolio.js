@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { SiExpress, SiPostgresql, SiReact, SiCss3, SiJquery } from "react-icons/si"
 import { FaNodeJs, FaBootstrap } from "react-icons/fa"
 
-function Portfolio () {
+function Portfolio ({mouseOverEvent, mouseOutEvent}) {
   return (
     <div className={styles.body}>
       <h3>Portfolio</h3>
@@ -72,6 +72,8 @@ function Portfolio () {
           <a
             href="https://github.com/chunkay1/graceShopper"
             target="none"
+            onMouseOver={mouseOverEvent}
+            onMouseOut={mouseOutEvent}
             className={styles.icon}>
             <AiFillGithub />
           </a>
@@ -111,6 +113,8 @@ function Portfolio () {
           <a
               href="https://github.com/chunkay1/graceShopper"
               target="none"
+              onMouseOver={mouseOverEvent}
+              onMouseOut={mouseOutEvent}
               className={styles.icon}>
             <AiFillGithub />
           </a>

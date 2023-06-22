@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import toast, { Toaster } from 'react-hot-toast';
 
-function Contact () {
+function Contact ({mouseOverEvent, mouseOutEvent}) {
   const form = useRef();
   const [user_name, setUser_name] = useState('');
   const [user_email, setUser_email] = useState('');
@@ -38,9 +38,6 @@ function Contact () {
       setMessage('');
   }
 
-  var mouseOverEvent = require('./Cursor.js').mouseOverEvent
-  var mouseOutEvent = require('./Cursor.js').mouseOutEvent
-
   return (
     
     <div className={styles.body}>
@@ -51,13 +48,19 @@ function Contact () {
         <a 
           href="https://www.linkedin.com/in/fabian-s-hernandez/" 
           target="blank"
-          className={styles.icon}> 
+          onMouseOver={mouseOverEvent}
+          onMouseOut={mouseOutEvent}
+          id="anchor"
+          className={styles.icon}>
           <AiFillLinkedin /> 
         </a>
 
         <a 
           href="https://github.com/chunkay1"
           target="blank"
+          onMouseOver={mouseOverEvent}
+          onMouseOut={mouseOutEvent}
+          id="anchor"
           className={styles.icon}>
             <AiFillGithub />
         </a>
@@ -119,6 +122,8 @@ function Contact () {
             <input 
               type='submit' 
               value='Submit'
+              onMouseOver={mouseOverEvent}
+              onMouseOut={mouseOutEvent}
               className={styles.button}/>
         {/* <button className={styles.button} value='Send'>Submit</button> */}
 

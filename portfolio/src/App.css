@@ -19,8 +19,8 @@
 }
 
 .cursor-dot {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   background-color: rgb(97, 175, 239);
 }
 
@@ -28,7 +28,7 @@
   width: 40px;
   height: 40px;
   /* background-color: rgba(97, 175, 239, 0.5); */
-  border: 2px solid rgba(97, 175, 239, 0.5);
+  border: 1.5px solid rgba(97, 175, 239, 0.5);
 }
 
 .App {
