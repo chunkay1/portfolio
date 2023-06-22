@@ -46,3 +46,7 @@ html {
 .icon:visited {
   color: white;
 }
+
+.icon:hover {
+  color: #E5C07B;
+}

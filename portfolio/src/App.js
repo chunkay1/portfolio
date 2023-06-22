@@ -55,20 +55,32 @@ function App() {
   const toggleCursorSize = () => {
     if (cursorEnlarged.current) {
       dot.current.style.transform = 'translate(-50%, -50%) scale(0.75)';
+      dot.current.style.backgroundColor =  "#E5C07B";
+
       dotOutline.current.style.transform = 'translate(-50%, -50%) scale(1.25)';
+      dotOutline.current.style.border = "1.5px solid #E5C07B";
     } else {
       dot.current.style.transform = 'translate(-50%, -50%) scale(1)';
+      dot.current.style.backgroundColor =  "rgb(97, 175, 239)";
+
       dotOutline.current.style.transform = 'translate(-50%, -50%) scale(1)';
+      dotOutline.current.style.border = "1.5px solid rgba(97, 175, 239, 0.5)";
     }
   };
 
   const mouseDownSize = () => {
     if (cursorEnlarged.current) {
       dot.current.style.transform = 'translate(-50%, -50%) scale(0.7)';
+      dot.current.style.backgroundColor =  "#98C379";
+
       dotOutline.current.style.transform = 'translate(-50%, -50%) scale(0.7)';
+      dotOutline.current.style.border = "1.5px solid #98C379";
     } else {
       dot.current.style.transform = 'translate(-50%, -50%) scale(1)';
+      dot.current.style.backgroundColor =  "rgb(97, 175, 239)";
+
       dotOutline.current.style.transform = 'translate(-50%, -50%) scale(1)';
+      dotOutline.current.style.border = "1.5px solid rgba(97, 175, 239, 0.5)";
     }
   };
 

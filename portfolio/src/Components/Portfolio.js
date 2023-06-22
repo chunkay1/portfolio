@@ -13,7 +13,10 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
 
         <h4>
           <a 
-            href="https://hike-seek.onrender.com/" target="none"
+            href="https://hike-seek.onrender.com/" 
+            target="none"
+            onMouseOver={mouseOverEvent}
+            onMouseOut={mouseOutEvent}
             className={styles.link}>
               Hike & Seek
           </a>
@@ -86,6 +89,8 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
           <a
             href="https://heroic-pixie-09ba24.netlify.app/"
             target="none"
+            onMouseOver={mouseOverEvent}
+            onMouseOut={mouseOutEvent}
             className={styles.link}>
               Strangers Things
           </a>
