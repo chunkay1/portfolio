@@ -74,7 +74,7 @@ function App() {
       dot.current.style.backgroundColor =  "#98C379";
 
       dotOutline.current.style.transform = 'translate(-50%, -50%) scale(0.7)';
-      dotOutline.current.style.border = "1.5px solid #98C379";
+      dotOutline.current.style.border = "2px solid #98C379";
     } else {
       dot.current.style.transform = 'translate(-50%, -50%) scale(1)';
       dot.current.style.backgroundColor =  "rgb(97, 175, 239)";

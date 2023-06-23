@@ -42,90 +42,103 @@ function Contact ({mouseOverEvent, mouseOutEvent}) {
     
     <div className={styles.body}>
 
+        <h2 className={styles.header}>Let's Connect!</h2>
+
+        <div className={styles.icons}>
+          <a 
+            href="https://www.linkedin.com/in/fabian-s-hernandez/" 
+            target="blank"
+            onMouseOver={mouseOverEvent}
+            onMouseOut={mouseOutEvent}
+            id="anchor"
+            className={styles.icon}>
+            <AiFillLinkedin /> 
+          </a>
+
+          <a 
+            href="https://github.com/chunkay1"
+            target="blank"
+            onMouseOver={mouseOverEvent}
+            onMouseOut={mouseOutEvent}
+            id="anchor"
+            className={styles.icon}>
+              <AiFillGithub />
+          </a>
+        </div>
+        
       <form ref={form} onSubmit={sendEmail}>
 
-        <h2 className={styles.header}>Let's Connect!</h2>
-        <a 
-          href="https://www.linkedin.com/in/fabian-s-hernandez/" 
-          target="blank"
-          onMouseOver={mouseOverEvent}
-          onMouseOut={mouseOutEvent}
-          id="anchor"
-          className={styles.icon}>
-          <AiFillLinkedin /> 
-        </a>
-
-        <a 
-          href="https://github.com/chunkay1"
-          target="blank"
-          onMouseOver={mouseOverEvent}
-          onMouseOut={mouseOutEvent}
-          id="anchor"
-          className={styles.icon}>
-            <AiFillGithub />
-        </a>
         
 
         <div className={styles.inputs}>
-          <input 
-            type='text'
-            label='Name'
-            name='user_name'
-            value={user_name}
-            onChange={setTargetValue(setUser_name)}
-            placeholder='Name'
-            required='yes'
-            onInvalid= {(e) => {
-              e.target.setCustomValidity('Please Provide Your Name')
-            }}
-            onInput={(e) => {
-              e.target.setCustomValidity('');
-            }}
-            className={styles.input}>
-          </input>
-
-          <input 
-            type='email'
-            label='Email'
-            name='user_email'
-            value={user_email}
-            onChange={setTargetValue(setUser_email)}
-            placeholder='Email'
-            required='yes'
-            onInvalid={(e) => {
-              e.target.setCustomValidity('Please Provide a Valid Email');
-            }}
-            onInput={(e) => {
-              e.target.setCustomValidity('');
-            }}
-            className={styles.input}>
-          </input>
-
-          <textarea 
-            type='text'
-            label='Message'
-            name='message'
-            value={message}
-            onChange={setTargetValue(setMessage)}
-            placeholder='Message'
-            onInvalid={(e) => {
-              e.target.setCustomValidity('Please Enter Your Message Here :)')
-            }}
-            onInput={(e) => {
-              e.target.setCustomValidity('');
-            }}
-            maxLength="250"
-            required='yes'
-            className={`${styles.message} ${styles.input}`}>
-          </textarea>
-        </div>
+          <div className={styles.inputBox}>
             <input 
-              type='submit' 
-              value='Submit'
-              onMouseOver={mouseOverEvent}
-              onMouseOut={mouseOutEvent}
-              className={styles.button}/>
-        {/* <button className={styles.button} value='Send'>Submit</button> */}
+              type='text'
+              name='user_name'
+              value={user_name}
+              onChange={setTargetValue(setUser_name)}
+              required='yes'
+              onInvalid= {(e) => {
+                e.target.setCustomValidity('Please Provide Your Name')
+              }}
+              onInput={(e) => {
+                e.target.setCustomValidity('');
+              }}
+              className={styles.input}>
+            </input>
+            <span>Your Name</span>
+            <i></i>
+          </div>
+
+          <div className={styles.inputBox}>
+            <input 
+              type='email'
+              name='user_email'
+              value={user_email}
+              onChange={setTargetValue(setUser_email)}
+              required='yes'
+              onInvalid={(e) => {
+                e.target.setCustomValidity('Please Provide a Valid Email');
+              }}
+              onInput={(e) => {
+                e.target.setCustomValidity('');
+              }}
+              className={styles.input}>
+            </input>
+            <span>Your Email</span>
+            <i></i>
+          </div>
+
+          <div className={styles.inputBox}>
+            <textarea 
+              type='text'
+              name='message'
+              value={message}
+              onChange={setTargetValue(setMessage)}
+              onInvalid={(e) => {
+                e.target.setCustomValidity('Please Enter Your Message Here :)')
+              }}
+              onInput={(e) => {
+                e.target.setCustomValidity('');
+              }}
+              maxLength="250"
+              required='yes'
+              className={`${styles.message} ${styles.input}`}>
+            </textarea>
+            <span>Your Message</span>
+            <i></i>
+          </div>
+
+        </div>
+
+        <input 
+          type='submit' 
+          value='Submit'
+          onMouseOver={mouseOverEvent}
+          onMouseOut={mouseOutEvent}
+          className={styles.button}
+        />
+        
 
       </form>
       
