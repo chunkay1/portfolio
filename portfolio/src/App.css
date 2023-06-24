@@ -7,9 +7,6 @@
   /* cursor: none; */
 }
 
-/* https://codepen.io/alvarotrigo/pen/ZEJqBdY */
-/* Using this as the background */
-
 .cursor-dot,
 .cursor-dot-outline {
   pointer-events: none;
@@ -41,10 +38,10 @@
   width: 100vw;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -73,7 +70,7 @@
 .App-main {
   /* border: 1px solid pink; */
   min-height: 92vh;
-
+  min-width: 100vw;
 }
 
 .App-link {
@@ -101,6 +98,7 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
 
 .bubbles {
   position: relative;

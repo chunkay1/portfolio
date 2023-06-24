@@ -133,7 +133,7 @@ function App() {
   return (
     <div className="App">     
       <div className="container">
-      <div className="bubbles">
+        <div className="bubbles">
           <span style ={{'--i': '11'}}></span>
           <span style ={{'--i': '12'}}></span>
           <span style ={{'--i': '24'}}></span>
