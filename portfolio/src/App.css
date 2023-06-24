@@ -3,8 +3,12 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  z-index: 10;
   /* cursor: none; */
 }
+
+/* https://codepen.io/alvarotrigo/pen/ZEJqBdY */
+/* Using this as the background */
 
 .cursor-dot,
 .cursor-dot-outline {
@@ -34,6 +38,7 @@
 .App {
   text-align: center;
   background-color: #282c34;
+  width: 100vw;
 }
 
 .App-logo {
@@ -68,7 +73,7 @@
 .App-main {
   /* border: 1px solid pink; */
   min-height: 92vh;
-  min-width: 100vw;
+
 }
 
 .App-link {
@@ -82,5 +87,54 @@
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+body {
+  min-height: 100vh;
+  background: #282c34;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bubbles {
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+
+.bubbles span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #C678DD;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #C678DD44,
+    0 0 50px #C678DD,
+    0 0 50px #C678DD;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(170s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+  background: #ABB2BF;
+  box-shadow: 0 0 0 10px #ABB2BF44,
+    0 0 50px #ABB2BF,
+    0 0 50px #ABB2BF;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+
+  100% {
+    transform: translateY(-10vh) scale(.5);
   }
 }

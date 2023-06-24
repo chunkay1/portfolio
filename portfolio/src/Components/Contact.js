@@ -71,7 +71,9 @@ function Contact ({mouseOverEvent, mouseOutEvent}) {
         
 
         <div className={styles.inputs}>
+
           <div className={styles.inputBox}>
+
             <input 
               type='text'
               name='user_name'
@@ -86,11 +88,14 @@ function Contact ({mouseOverEvent, mouseOutEvent}) {
               }}
               className={styles.input}>
             </input>
+
             <span>Your Name</span>
             <i></i>
+
           </div>
 
           <div className={styles.inputBox}>
+
             <input 
               type='email'
               name='user_email'
@@ -105,8 +110,10 @@ function Contact ({mouseOverEvent, mouseOutEvent}) {
               }}
               className={styles.input}>
             </input>
+
             <span>Your Email</span>
             <i></i>
+            
           </div>
 
           <div className={styles.inputBox}>

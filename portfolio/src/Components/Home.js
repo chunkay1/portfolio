@@ -31,8 +31,7 @@ function Home({mouseOverEvent, mouseOutEvent}) {
             onMouseOut={mouseOutEvent} 
             href={`${BASEURL}contact`}> contact page.</a>
         </p>
-
-        <h3>Education</h3>
+        
         <h3>Skills</h3>
 
         {/* Use this site as an inspiration - https://brittanychiang.com/#about */}
