@@ -175,6 +175,7 @@ function App() {
           <span style ={{'--i': '13'}}></span>
           <span style ={{'--i': '28'}}></span>
         </div>
+      </div> 
       
         <header className="App-header">
           {/* <div ref={dotOutline} className= "cursor-dot-outline"></div>
@@ -190,6 +191,7 @@ function App() {
           <Route exact path='/' element={
             <>
               <main className="App-main">
+                
                 <div ref={dotOutline} className= "cursor-dot-outline"></div>
                 <div ref={dot} className="cursor-dot"></div>
                 <Home 
@@ -210,6 +212,7 @@ function App() {
           <Route path='/portfolio' element={
             <>
               <main className="App-main">
+              
                 <div ref={dotOutline} className= "cursor-dot-outline"></div>
                 <div ref={dot} className="cursor-dot"></div>
                 <Portfolio 
@@ -248,7 +251,7 @@ function App() {
           
         </Routes>
 
-      </div> 
+      
 
     </div>
   );
