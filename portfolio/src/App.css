@@ -4,7 +4,7 @@
   outline: 0;
   box-sizing: border-box;
   z-index: 10;
-  /* cursor: none; */
+  cursor: none;
 }
 
 .cursor-dot,

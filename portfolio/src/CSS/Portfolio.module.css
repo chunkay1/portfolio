@@ -20,14 +20,26 @@ html {
   color: white;
 }
 
-.project {
+.description {
   height: 100vh;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45vw;
+  width: 50vw;
+  text-align: center;
+  border: 1px solid red;
+  padding: 0 35px;
+}
+
+.project {
+  /* height: 100vh;
+  scroll-snap-align: start; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
 
@@ -49,4 +61,19 @@ html {
 
 .icon:hover {
   color: #E5C07B;
+}
+
+.video {
+  border: 1px solid skyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  /* object-fit: cover; */
+}
+
+.video video {
+  width: 45vw;
+  height: 30vh;
 }

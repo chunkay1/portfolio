@@ -47,3 +47,11 @@ body {
     transform: translateY(-10vh) scale(.5);
   }
 }
+
+.video {
+  border: 1px solid skyblue;
+  /* position: absolute; */
+  width: 40vw;
+  height: 30vh;
+  /* object-fit: cover; */
+}
