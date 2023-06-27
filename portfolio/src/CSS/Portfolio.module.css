@@ -7,6 +7,10 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid red;
+  height: 100vh;
+  /* padding-top: 10vh; */
+
 }
 
 .link {
@@ -29,18 +33,17 @@ html {
   align-items: center;
   width: 50vw;
   text-align: center;
-  border: 1px solid red;
   padding: 0 35px;
 }
 
 .project {
-  /* height: 100vh;
-  scroll-snap-align: start; */
+  /* scroll-snap-align: start; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  /* margin-top: 10vh; */
 }
 
 .technologies {

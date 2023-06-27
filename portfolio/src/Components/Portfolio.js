@@ -1,13 +1,39 @@
-import React from "react";
-import 'animate.css'
+import { React, useEffect } from "react";
 import styles from '../CSS/Portfolio.module.css'
 import { AiFillGithub } from "react-icons/ai";
 import { SiExpress, SiPostgresql, SiReact, SiCss3, SiJquery } from "react-icons/si"
 import { FaNodeJs, FaBootstrap } from "react-icons/fa"
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 function Portfolio ({mouseOverEvent, mouseOutEvent}) {
+
+  const control = useAnimation();
+  // const {ref, inView} = useInView();
+
+  const boxVariant = {
+    visible: { 
+      opacity: 1, 
+      scale: 1, 
+      transition: { duration: 0.5} 
+    },
+    hidden: { 
+      opacity: 0, 
+      scale: 0 
+    },
+  }
+
+  // useEffect(() => {
+  //   if (inView) {
+  //     control.start("visible");
+  //   } else {
+  //     control.start("hidden");
+  //   }
+  // }, [control, inView]);
+
   return (
     <div className={styles.body}>
+      
 
       <section className={styles.project}>
 
@@ -22,6 +48,7 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
                 Hike & Seek
             </a>
           </h4>
+          
 
           <p>For the Fullstack Academy Capstone Project, my team built an e-commerce site geared towards outdoor enthusiasts.</p>
 
@@ -85,12 +112,24 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
 
         </div>
 
-        <div className={styles.video}>
-          <video autoPlay muted loop class="animate__animated animate__slideInRight">
-              <source src="HaS_Demo.mp4" type="video/mp4"/>
-              
-          </video>
-        </div>
+        <motion.div 
+          className={`box ${styles.video}`}
+          // ref={ref}
+          variants={boxVariant}
+          initial="hidden"
+          animate="visible">
+            <video autoPlay muted loop>
+                <source src="HaS_Demo.mp4" type="video/mp4"/> 
+            </video>
+        </motion.div>
+        
+        {/* <motion.div 
+          className={`box ${styles.video}`}
+          variants={boxVariant}
+          initial="hidden"
+          animate="visible">
+          <h2>Test</h2>
+        </motion.div> */}
 
       </section>
 
@@ -140,7 +179,7 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
         </div>
 
         <div className={styles.video}>
-          <video autoPlay muted loop class="animate__animated animate__slideInRight">
+          <video autoPlay muted loop>
               <source src="HaS_Demo.mp4" type="video/mp4"/>
               
           </video>
