@@ -7,7 +7,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100vh;
   /* padding-top: 10vh; */
 
@@ -75,7 +75,6 @@ html {
 }
 
 .video {
-  border: 1px solid skyblue;
   display: flex;
   flex-direction: column;
   justify-content: center;

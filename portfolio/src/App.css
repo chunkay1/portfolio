@@ -110,23 +110,23 @@ body {
 
 .bubbles span {
   position: relative;
-  width: 18px;
-  height: 18px;
+  width: 9px;
+  height: 9px;
   background: #C678DD;
-  margin: 0 4px;
+  margin: 0 8px;
   border-radius: 50%;
-  box-shadow: 0 0 0 6px #C678DD44,
-    0 0 30px #C678DD,
-    0 0 30px #C678DD;
-  animation: animate 15s linear infinite;
+  box-shadow: 0 0 0 3px #C678DD44,
+    0 0 15px #C678DD,
+    0 0 15px #C678DD;
+  animation: animate 90s linear infinite;
   animation-duration: calc(170s / var(--i));
 }
 
 .bubbles span:nth-child(even) {
   background: #ABB2BF;
-  box-shadow: 0 0 0 8px #ABB2BF44,
-    0 0 18px #ABB2BF,
-    0 0 18px #ABB2BF;
+  box-shadow: 0 0 0 4px #ABB2BF44,
+    0 0 9px #ABB2BF,
+    0 0 9px #ABB2BF;
 }
 
 @keyframes animate {
