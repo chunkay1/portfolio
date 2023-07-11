@@ -1,27 +1,40 @@
-import { React, useEffect } from "react";
+import { React, useEffect, useRef} from "react";
 import styles from '../CSS/Portfolio.module.css'
 import { AiFillGithub } from "react-icons/ai";
 import { SiExpress, SiPostgresql, SiReact, SiCss3, SiJquery } from "react-icons/si"
 import { FaNodeJs, FaBootstrap } from "react-icons/fa"
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from 'react-intersection-observer';
+import { animate, motion, useAnimation, useInView } from "framer-motion";
+// import { useInView } from 'react-intersection-observer';
+
 
 function Portfolio ({mouseOverEvent, mouseOutEvent}) {
 
-  const control = useAnimation();
-  // const {ref, inView} = useInView();
+  // const control = useAnimation();
+  // const ref = useInView();
 
-  const boxVariant = {
-    visible: { 
-      opacity: 1, 
-      scale: 1, 
-      transition: { duration: 0.5} 
-    },
-    hidden: { 
-      opacity: 0, 
-      scale: 0 
-    },
-  }
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  const mainControls = useAnimation();
+  // const { ref, entry } = useInView({ trackVisibility: true, delay: 100 })
+  
+  useEffect( () => {
+    isInView ?
+    mainControls.start("visible")
+    :
+    console.log('out of view')
+  }, [isInView] );
+
+  // const boxVariant = {
+  //   hidden: { 
+  //     opacity: 0, 
+  //     x: 75
+  //   },
+  //   visible: { 
+  //     opacity: 1, 
+  //     x: 0, 
+  //     transition: { duration: 0.5, delay: 0.1} 
+  //   },
+  // }
 
   // useEffect(() => {
   //   if (inView) {
@@ -35,7 +48,9 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
     <div className={styles.body}>
       
 
-      <section className={styles.project}>
+      <section 
+        className={styles.project}
+        ref={ref}>
 
         <div className={styles.description}>
           <h4>
@@ -114,10 +129,23 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
 
         <motion.div 
           className={`box ${styles.video}`}
-          // ref={ref}
-          variants={boxVariant}
+          variants={{
+            hidden: { 
+              opacity: 0, 
+              x: 75
+            },
+            visible: { 
+              opacity: 1, 
+              x: 0, 
+              transition: { duration: 0.5, delay: 0.1} 
+            },
+          }}
+          viewport={{ 
+            once: false
+          }}
+          whileInView="visible"
           initial="hidden"
-          animate="visible">
+          animate={mainControls}>
             <video autoPlay muted loop>
                 <source src="HaS_Demo.mp4" type="video/mp4"/> 
             </video>
@@ -133,7 +161,9 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
 
       </section>
 
-      <section className={styles.project}>
+      <section 
+        className={styles.project}
+        ref={ref}>
 
         <div className={styles.description}>
           <h4>
@@ -178,14 +208,31 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
 
         </div>
 
-        <div className={styles.video}>
-          <video autoPlay muted loop>
-              <source src="HaS_Demo.mp4" type="video/mp4"/>
-              
-          </video>
-        </div>
+        <motion.div 
+          className={`box ${styles.video}`}
+          variants={{
+            hidden: { 
+              opacity: 0, 
+              x: -75
+            },
+            visible: { 
+              opacity: 1, 
+              x: 0, 
+              transition: { duration: 0.5, delay: 0.1} 
+            },
+          }}
+          viewport={{ 
+            once: false
+          }}
+          whileInView="visible"
+          initial="hidden"
+          animate={mainControls}>
+            <video autoPlay muted loop>
+                <source src="ST_Demo.mp4" type="video/mp4"/> 
+            </video>
+        </motion.div>
 
-      </section>
+      </section>      
 
     </div>
   )

@@ -46,6 +46,14 @@ html {
   /* margin-top: 10vh; */
 }
 
+.project:nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
 .technologies {
   display: flex;
   flex-direction: row;
@@ -77,6 +85,6 @@ html {
 }
 
 .video video {
-  width: 45vw;
-  height: 30vh;
+  width: 55vw;
+  height: 40vh;
 }
