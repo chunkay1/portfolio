@@ -1,12 +1,10 @@
 import React from "react";
 import styles from '../CSS/Test.module.css'
-{/* <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet"> */}
-
 function Test() {
   return(
     <body>
 
-      <div className={styles.container}>
+      {/* <div className={styles.container}>
         <div className={styles.bubbles}>
           <span style ={{'--i': '11'}}></span>
           <span style ={{'--i': '12'}}></span>
@@ -50,7 +48,15 @@ function Test() {
           <span style ={{'--i': '28'}}></span>
         </div>
         
-      </div>
+      </div> */}
+
+      <div className={styles.video}>
+          <video autoPlay muted loop>
+            <source 
+              src="HaS_Demo.mp4" 
+              type="video/mp4"/>
+          </video>
+        </div>
     </body>
   )
 }

@@ -6,12 +6,20 @@ function Home({mouseOverEvent, mouseOutEvent}) {
   return (
     <div className={styles.main}>
 
-      <h3>Welcome!</h3>
+      <h3>Why hello there!</h3>
 
       <div className={styles.content}>
 
         <p>
           My name is Fabian Hernandez and I am a budding software engineer who recently graduated from Fullstack Academy.
+          
+          <br />
+
+          After nearly two decades in customer service I'm looking for a new challenge where I can apply the skills I've developed over my career and apply myself towards honing a new skillset. 
+
+          <br />
+
+          I hope you'll enjoy your time here. 
         </p>
 
         <br />
@@ -32,7 +40,6 @@ function Home({mouseOverEvent, mouseOutEvent}) {
             href={`${BASEURL}contact`}> contact page.</a>
         </p>
         
-        <h3>Skills</h3>
 
         {/* Use this site as an inspiration - https://brittanychiang.com/#about */}
 

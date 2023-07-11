@@ -3,6 +3,11 @@
   margin-top: 5vh;
   padding: 20px 0;
   min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
 }
 
 .content {
@@ -10,6 +15,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 75vw;
   padding: 0 50px;
 }
 

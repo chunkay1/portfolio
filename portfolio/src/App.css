@@ -7,9 +7,6 @@
   /* cursor: none; */
 }
 
-/* https://codepen.io/alvarotrigo/pen/ZEJqBdY */
-/* Using this as the background */
-
 .cursor-dot,
 .cursor-dot-outline {
   pointer-events: none;
@@ -20,6 +17,7 @@
   border-radius: 50%;
   opacity: 1;
   transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out, color 0.15s;
+  z-index: 100;
 }
 
 .cursor-dot {
@@ -41,10 +39,10 @@
   width: 100vw;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -53,7 +51,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: transparent;
   min-height: 8vhh;
   display: flex;
   flex-direction: column;
@@ -67,13 +65,14 @@
   position: fixed !important;
   overflow: hidden;
   top: 0;
+  z-index: 1000;
 
 }
 
 .App-main {
   /* border: 1px solid pink; */
   min-height: 92vh;
-
+  min-width: 100vw;
 }
 
 .App-link {
@@ -96,11 +95,12 @@ body {
 }
 
 .container {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
 
 .bubbles {
   position: relative;
@@ -110,23 +110,23 @@ body {
 
 .bubbles span {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 18px;
+  height: 18px;
   background: #C678DD;
   margin: 0 4px;
   border-radius: 50%;
-  box-shadow: 0 0 0 10px #C678DD44,
-    0 0 50px #C678DD,
-    0 0 50px #C678DD;
+  box-shadow: 0 0 0 6px #C678DD44,
+    0 0 30px #C678DD,
+    0 0 30px #C678DD;
   animation: animate 15s linear infinite;
   animation-duration: calc(170s / var(--i));
 }
 
 .bubbles span:nth-child(even) {
   background: #ABB2BF;
-  box-shadow: 0 0 0 10px #ABB2BF44,
-    0 0 50px #ABB2BF,
-    0 0 50px #ABB2BF;
+  box-shadow: 0 0 0 8px #ABB2BF44,
+    0 0 18px #ABB2BF,
+    0 0 18px #ABB2BF;
 }
 
 @keyframes animate {

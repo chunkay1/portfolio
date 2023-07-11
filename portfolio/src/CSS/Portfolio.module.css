@@ -7,6 +7,10 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid red;
+  height: 100vh;
+  /* padding-top: 10vh; */
+
 }
 
 .link {
@@ -20,14 +24,33 @@ html {
   color: white;
 }
 
-.project {
+.description {
   height: 100vh;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45vw;
+  width: 50vw;
+  text-align: center;
+  padding: 0 35px;
+}
+
+.project {
+  /* scroll-snap-align: start; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  /* margin-top: 10vh; */
+}
+
+.project:nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
 
@@ -49,4 +72,19 @@ html {
 
 .icon:hover {
   color: #E5C07B;
+}
+
+.video {
+  border: 1px solid skyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  /* object-fit: cover; */
+}
+
+.video video {
+  width: 55vw;
+  height: 40vh;
 }
