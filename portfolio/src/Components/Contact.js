@@ -42,7 +42,7 @@ function Contact ({mouseOverEvent, mouseOutEvent}) {
     
     <div className={styles.body}>
 
-        <h2 className={styles.header}>Let's Connect!</h2>
+        <h3 className={styles.header}>Let's Connect!</h3>
 
         <div className={styles.icons}>
           <a 
@@ -155,7 +155,7 @@ function Contact ({mouseOverEvent, mouseOutEvent}) {
           style: {
             border: '1px solid #282C34',
             background: '#61AFEF',
-            padding: '8px',
+            padding: '5px',
             color: '#282C34',
           },
         }}

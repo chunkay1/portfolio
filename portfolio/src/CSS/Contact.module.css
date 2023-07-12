@@ -23,7 +23,8 @@
 }
 
 .icon {
-  color: #61AFEF;
+  /* color: #61AFEF; */
+  color: black;
   transition: color 0.25s, transform 0.25s;
   margin: 8px 20px;
   font-size: 2em;
@@ -32,6 +33,11 @@
 .icon:hover {
   color: white;
   transform: translatey(-0.25em);
+}
+
+.icon:active {
+  color: white;
+  transform: translatey(0);
 }
 
 .inputs {
@@ -84,7 +90,8 @@
 .inputBox input:focus~span,
 .inputBox textarea:valid~span,
 .inputBox textarea:focus~span {
-  color: #61AFEF;
+  color: white;
+  /* color: #98C379; */
   transform: translateX(-10px) translateY(-34px);
   font-size: 0.75em;
 }
@@ -118,6 +125,7 @@
 
 .button {
   background-color: #61AFEF;
+  /* background-color: #ABB2BF; */
   border: none;
   border-radius: 5px;
   padding: 4px 8px;
