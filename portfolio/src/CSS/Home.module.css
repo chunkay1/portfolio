@@ -1,7 +1,7 @@
 .main {
   color: white;
-  margin-top: 5vh;
-  padding: 20px 0;
+  /* margin-top: 5vh; */
+  padding: 15vh 0;
   min-height: 95vh;
   display: flex;
   flex-direction: column;
@@ -28,5 +28,6 @@
 }
 
 .link:hover {
-  color: cornflowerblue;
+  /* color: cornflowerblue; */
+  color: #282C34;
 }

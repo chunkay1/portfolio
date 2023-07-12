@@ -61,10 +61,12 @@ function App() {
       dotOutline.current.style.border = "1.5px solid #E5C07B";
     } else {
       dot.current.style.transform = 'translate(-50%, -50%) scale(1)';
-      dot.current.style.backgroundColor =  "rgb(97, 175, 239)";
+      // dot.current.style.backgroundColor =  "rgb(97, 175, 239)";
+      dot.current.style.backgroundColor =  "rgb(156, 20, 31)";
 
       dotOutline.current.style.transform = 'translate(-50%, -50%) scale(1)';
-      dotOutline.current.style.border = "1.5px solid rgba(97, 175, 239, 0.5)";
+      // dotOutline.current.style.border = "1.5px solid rgba(97, 175, 239, 0.5)";
+      dotOutline.current.style.border = "1.5px solid rgba(156, 20, 31, 0.5)";
     }
   };
 

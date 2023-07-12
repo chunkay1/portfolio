@@ -121,7 +121,8 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
               onMouseOver={mouseOverEvent}
               onMouseOut={mouseOutEvent}
               className={styles.icon}>
-              <AiFillGithub />
+              <AiFillGithub 
+                className={styles.icon} />
             </a>
           </div>
 
@@ -202,7 +203,8 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
                 onMouseOver={mouseOverEvent}
                 onMouseOut={mouseOutEvent}
                 className={styles.icon}>
-              <AiFillGithub />
+              <AiFillGithub 
+              className={styles.icon}/>
             </a>
           </div>
 

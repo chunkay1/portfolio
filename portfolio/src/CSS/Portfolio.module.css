@@ -7,17 +7,14 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* border: 1px solid red; */
-  height: 100vh;
   /* padding-top: 10vh; */
-
 }
 
 .link {
-  text-decoration: none;
-  color: cornflowerblue;
+  text-decoration: underline;
+  color: #282C34;
   margin: 0 5px;
-  transition: color 0.25s
+  transition: color 0.25s;
 }
 
 .link:hover {
@@ -43,6 +40,7 @@ html {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  background: transparent;
   /* margin-top: 10vh; */
 }
 
@@ -63,7 +61,7 @@ html {
 }
 
 .icon {
-  color: white;
+  color: #C678DD;
 }
 
 .icon:visited {

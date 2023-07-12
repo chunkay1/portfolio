@@ -32,9 +32,10 @@
   text-decoration: none;
   color: white;
   margin: 0 5px;
-  transition: color 0.25s
+  transition: color 0.25s;
 }
 
 .link:hover {
-  color: cornflowerblue;
+  /* color: cornflowerblue; */
+  color: #282C34;
 }

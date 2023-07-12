@@ -4,7 +4,7 @@
   outline: 0;
   box-sizing: border-box;
   z-index: 10;
-  /* cursor: none; */
+  cursor: none;
 }
 
 .cursor-dot,
@@ -23,20 +23,23 @@
 .cursor-dot {
   width: 7px;
   height: 7px;
-  background-color: rgb(97, 175, 239);
+  /* background-color: rgb(97, 175, 239); */
+  background-color: rgb(156, 20, 31);
 }
 
 .cursor-dot-outline {
   width: 40px;
   height: 40px;
   /* background-color: rgba(97, 175, 239, 0.5); */
-  border: 1.5px solid rgba(97, 175, 239, 0.5);
+  border: 1.5px solid rgba(156, 20, 31, 0.5);
 }
 
 .App {
   text-align: center;
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-image: linear-gradient(to top, #282C34 0%, #ABB2BF 100%);
   width: 100vw;
+  background-attachment: fixed;
 }
 
 /* .App-logo {
@@ -65,7 +68,7 @@
   position: fixed !important;
   overflow: hidden;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
 
 }
 
