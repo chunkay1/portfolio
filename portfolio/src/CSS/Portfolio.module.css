@@ -86,3 +86,44 @@ html {
   width: 55vw;
   height: 40vh;
 }
+
+@media screen and (max-width: 1000px) {
+
+  .project,
+  .project:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .description {
+    border: 1px solid red;
+    height: 65vh;
+    width: 100vw;
+  }
+
+  .video {
+    border: 1px solid red;
+    height: 35vh;
+    width: 100vw;
+
+  }
+
+  .video video {
+    width: 40vw;
+    height: 25vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .video {
+    visibility: hidden;
+  }
+
+  .description {
+    height: 100vh;
+    width: 100vw;
+  }
+}
