@@ -66,7 +66,11 @@ function Contact ({mouseOverEvent, mouseOutEvent}) {
           </a>
         </div>
         
-      <form ref={form} onSubmit={sendEmail}>
+      <form 
+        className={styles.form} 
+        ref={form} 
+        onSubmit={sendEmail}
+      >
 
         
 

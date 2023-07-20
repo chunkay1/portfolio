@@ -65,7 +65,7 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
           </h4>
           
 
-          <p>For the Fullstack Academy Capstone Project, my team built an e-commerce site geared towards outdoor enthusiasts.</p>
+          <p>For the Fullstack Academy Capstone Project, our team built an e-commerce site geared towards outdoor enthusiasts.</p>
 
           <br />
             
