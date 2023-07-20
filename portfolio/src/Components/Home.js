@@ -10,8 +10,12 @@ function Home({mouseOverEvent, mouseOutEvent}) {
 
       <div className={styles.content}>
 
-        <p>
-          My name is Fabian Hernandez and I am a budding software engineer who recently graduated from Fullstack Academy.
+      <p>
+          Welcome to my portfolio site.
+          
+          <br />
+
+          My name is Fabian Hernandez. Among other things, I am a budding software engineer who recently graduated from Fullstack Academy.
           
           <br />
 

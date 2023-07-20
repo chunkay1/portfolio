@@ -22,7 +22,7 @@
 .link {
   /* font-size: small; */
   text-decoration: none;
-  color: white;
+  color: rgb(187, 178, 178);
   /* margin: 0 5px; */
   transition: color 0.25s
 }
