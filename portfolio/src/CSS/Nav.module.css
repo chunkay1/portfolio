@@ -49,7 +49,7 @@ https://blog.logrocket.com/create-responsive-navbar-react-css/ */
   }
 
   .nameAndTitle>h3 {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     min-width: 100%;
   }
 
