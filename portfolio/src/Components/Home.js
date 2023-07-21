@@ -14,7 +14,7 @@ function Home({mouseOverEvent, mouseOutEvent}) {
             
           <br />
         <p>
-            My name is Fabian Hernandez. Among other things, I am a budding software engineer who recently graduated from Fullstack Academy.
+            Among other things, I am a budding software engineer who recently graduated from Fullstack Academy.
         </p>
 
             <br />
@@ -23,7 +23,7 @@ function Home({mouseOverEvent, mouseOutEvent}) {
         </p>
             <br />
         <p>
-            I hope you'll enjoy your time here. 
+            When I'm not working on projects or Codewars, I'm usually hanging out with my wife and son, playing guitar, or training Brazilian Jiu-Jitsu.  
         </p>
 
           <br />
