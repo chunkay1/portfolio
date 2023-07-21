@@ -8,21 +8,25 @@
   justify-content: start;
   align-items: center;
   text-align: center;
+  border: 1px solid pink;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
-  width: 75vw;
-  padding: 0 50px;
+  width: 55vw;
+  height: 50vh;
+  padding: 10px 50px;
+  /* border: 1px solid red; */
 }
 
 .link {
   /* font-size: small; */
   text-decoration: none;
-  color: rgb(187, 178, 178);
+  /* color: rgb(167, 161, 161); */
+  color: #61AFEF;
   /* margin: 0 5px; */
   transition: color 0.25s
 }
