@@ -44,12 +44,14 @@
 https://blog.logrocket.com/create-responsive-navbar-react-css/ */
 
 @media screen and (max-width: 650px) {
+
   .nameAndTitle>h5 {
     visibility: hidden;
   }
 
   .nameAndTitle>h3 {
     /* border: 1px solid black; */
+    text-align: start;
     min-width: 100%;
   }
 
