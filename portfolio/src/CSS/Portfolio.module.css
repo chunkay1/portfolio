@@ -7,7 +7,6 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* padding-top: 10vh; */
 }
 
 .link {
@@ -35,14 +34,12 @@ html {
 }
 
 .project {
-  /* scroll-snap-align: start; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   background: transparent;
-  /* margin-top: 10vh; */
 }
 
 .project:nth-child(even) {
@@ -78,8 +75,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* position: absolute; */
-  /* object-fit: cover; */
 }
 
 .video video {

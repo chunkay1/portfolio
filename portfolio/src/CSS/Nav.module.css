@@ -3,7 +3,6 @@
 }
 
 .body {
-  /* border: 1px solid pink; */
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -17,10 +16,6 @@
   flex-direction: row;
   align-items: baseline;
 }
-
-/* .links {
-  border: 1px solid red;
-} */
 
 .headers {
   font-weight: 400;
@@ -36,7 +31,6 @@
 }
 
 .link:hover {
-  /* color: cornflowerblue; */
   color: #282C34;
 }
 
@@ -50,7 +44,6 @@ https://blog.logrocket.com/create-responsive-navbar-react-css/ */
   }
 
   .nameAndTitle>h3 {
-    /* border: 1px solid black; */
     text-align: start;
     min-width: 100%;
   }
