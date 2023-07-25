@@ -20,6 +20,15 @@
   z-index: 100;
 }
 
+@media screen and (max-width: 500px) {
+
+  .cursor-dot,
+  .cursor-dot-outline {
+    visibility: hidden;
+  }
+
+}
+
 .cursor-dot {
   width: 7px;
   height: 7px;

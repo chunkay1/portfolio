@@ -2,7 +2,7 @@
 import {Routes, Route} from 'react-router'
 import { useEffect, useRef } from 'react';
 import './App.css';
-import { Nav, Contact, Portfolio, Home, Test} from './Components/index'
+import { Nav, Contact, Portfolio, Home} from './Components/index'
 
 
 
@@ -216,14 +216,6 @@ function App() {
               </main>
             </>
           }/>
-
-          <Route path='/test' element={
-            <>
-                <div ref={dotOutline} className= "cursor-dot-outline"></div>
-                <div ref={dot} className="cursor-dot"></div>
-              <Test />
-            </>
-          } />
           
           <Route path='/portfolio' element={
             <>
