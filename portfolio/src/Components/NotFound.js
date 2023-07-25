@@ -1,64 +1,14 @@
 import React from "react";
-import styles from '../CSS/Test.module.css'
-function Test() {
-  return(
-    <body>
+import styles from '../CSS/NotFound.module.css'
 
-      {/* <div className={styles.container}>
-        <div className={styles.bubbles}>
-          <span style ={{'--i': '11'}}></span>
-          <span style ={{'--i': '12'}}></span>
-          <span style ={{'--i': '24'}}></span>
-          <span style ={{'--i': '10'}}></span>
-          <span style ={{'--i': '14'}}></span>
-          <span style ={{'--i': '23'}}></span>
-          <span style ={{'--i': '18'}}></span>
-          <span style ={{'--i': '16'}}></span>
-          <span style ={{'--i': '19'}}></span>
-          <span style ={{'--i': '20'}}></span>
-          <span style ={{'--i': '22'}}></span>
-          <span style ={{'--i': '25'}}></span>
-          <span style ={{'--i': '18'}}></span>
-          <span style ={{'--i': '21'}}></span>
-          <span style ={{'--i': '15'}}></span>
-          <span style ={{'--i': '13'}}></span>
-          <span style ={{'--i': '26'}}></span>
-          <span style ={{'--i': '17'}}></span>
-          <span style ={{'--i': '13'}}></span>
-          <span style ={{'--i': '28'}}></span>
-          <span style ={{'--i': '11'}}></span>
-          <span style ={{'--i': '12'}}></span>
-          <span style ={{'--i': '24'}}></span>
-          <span style ={{'--i': '10'}}></span>
-          <span style ={{'--i': '14'}}></span>
-          <span style ={{'--i': '23'}}></span>
-          <span style ={{'--i': '18'}}></span>
-          <span style ={{'--i': '16'}}></span>
-          <span style ={{'--i': '19'}}></span>
-          <span style ={{'--i': '20'}}></span>
-          <span style ={{'--i': '22'}}></span>
-          <span style ={{'--i': '25'}}></span>
-          <span style ={{'--i': '18'}}></span>
-          <span style ={{'--i': '21'}}></span>
-          <span style ={{'--i': '15'}}></span>
-          <span style ={{'--i': '13'}}></span>
-          <span style ={{'--i': '26'}}></span>
-          <span style ={{'--i': '17'}}></span>
-          <span style ={{'--i': '13'}}></span>
-          <span style ={{'--i': '28'}}></span>
-        </div>
-        
-      </div> */}
-
-      <div className={styles.video}>
-          <video autoPlay muted loop>
-            <source 
-              src="HaS_Demo.mp4" 
-              type="video/mp4"/>
-          </video>
-        </div>
-    </body>
+function NotFound({mouseOverEvent, mouseOutEvent}) {
+  return (
+      <div className={styles.container}>
+          <h2 className={styles.mainHeader}>Oops!</h2>
+          <img className={styles.image} src={'https://media.tenor.com/nEP6ovplEd8AAAAj/so-really.gif'} alt='lost' />
+          <h3 className={styles.subHeader}>Try using the links above!</h3>
+      </div>
   )
 }
 
-export default Test;
+export default NotFound; 

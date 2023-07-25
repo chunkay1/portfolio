@@ -1,57 +1,22 @@
-body {
-  min-height: 100vh;
-  background: #282c34;
-}
-
 .container {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -100;
-}
-
-.bubbles {
-  position: relative;
   display: flex;
-  z-index: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background-color: transparent;
+  height: 100vh;
 }
 
-.bubbles span {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background: #C678DD;
-  margin: 0 4px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 10px #C678DD44,
-    0 0 50px #C678DD,
-    0 0 50px #C678DD;
-  animation: animate 15s linear infinite;
-  animation-duration: calc(170s / var(--i));
+.mainHeader {
+  color: #282C34;
 }
 
-.bubbles span:nth-child(even) {
-  background: #ABB2BF;
-  box-shadow: 0 0 0 10px #ABB2BF44,
-    0 0 50px #ABB2BF,
-    0 0 50px #ABB2BF;
+.image {
+  margin: 2em 0;
 }
 
-@keyframes animate {
-  0% {
-    transform: translateY(100vh) scale(0);
-  }
-
-  100% {
-    transform: translateY(-10vh) scale(.5);
-  }
-}
-
-.video {
-  border: 1px solid skyblue;
-  /* position: absolute; */
-  width: 40vw;
-  height: 30vh;
-  /* object-fit: cover; */
+.subHeader {
+  color: white;
+  margin: 1em 0;
 }

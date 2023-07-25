@@ -2,7 +2,7 @@
 import {Routes, Route} from 'react-router'
 import { useEffect, useRef } from 'react';
 import './App.css';
-import { Nav, Contact, Portfolio, Home} from './Components/index'
+import { Nav, Contact, Portfolio, Home, NotFound} from './Components/index'
 
 
 
@@ -216,8 +216,22 @@ function App() {
               </main>
             </>
           }/>
+
+          <Route exact path='/home' element={
+            <>
+              <main className="App-main">
+                
+                <div ref={dotOutline} className= "cursor-dot-outline"></div>
+                <div ref={dot} className="cursor-dot"></div>
+                <Home 
+                  mouseOverEvent={mouseOverEvent}
+                  mouseOutEvent={mouseOutEvent}/>
+              </main>
+            </>
+          }/>
+
           
-          <Route path='/portfolio' element={
+          <Route exact path='/portfolio' element={
             <>
               <main className="App-main">
               
@@ -239,13 +253,13 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Learn React
+                Learn React
                 </a> */}
               </main>
             </>
           }/>
 
-          <Route path='/contact' element={
+          <Route exact path='/contact' element={
             <>
               <main className="App-main">
                 <div ref={dotOutline} className= "cursor-dot-outline"></div>
@@ -256,6 +270,16 @@ function App() {
               </main>
             </>
           }/>
+          
+          <Route path='/*' element={
+            <>
+              <div ref={dotOutline} className= "cursor-dot-outline"></div>
+              <div ref={dot} className="cursor-dot"></div>
+              <NotFound
+                mouseOverEvent={mouseOverEvent}
+                mouseOutEvent={mouseOutEvent} />
+            </>
+          } />
           
         </Routes>
 
