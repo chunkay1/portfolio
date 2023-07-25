@@ -6,7 +6,6 @@
   padding-top: 8.5vh;
   min-height: 100vh;
   min-width: 100vw;
-  /* border: 1px solid red; */
 }
 
 .header {
@@ -23,7 +22,6 @@
 }
 
 .icon {
-  /* color: #61AFEF; */
   color: black;
   transition: color 0.25s, transform 0.25s;
   margin: 8px 20px;
@@ -41,13 +39,9 @@
 }
 
 .inputs {
-  /* border: 1px solid pink; */
   display: flex;
   flex-direction: column;
   max-width: 45vw;
-  /* align-items: center;
-  justify-content: center;
-  margin: 5px; */
   padding: 25px 15px;
 }
 
@@ -58,10 +52,6 @@
 }
 
 .input {
-  /* margin: 15px 5px;
-  padding: .2em; */
-  /* min-width: 25vw;
-  background-color: #c7cfdf; */
   border-radius: 3px;
   position: relative;
   width: 100%;
@@ -91,7 +81,6 @@
 .inputBox textarea:valid~span,
 .inputBox textarea:focus~span {
   color: white;
-  /* color: #98C379; */
   transform: translateX(-10px) translateY(-34px);
   font-size: 0.75em;
 }
@@ -125,7 +114,6 @@
 
 .button {
   background-color: #61AFEF;
-  /* background-color: #ABB2BF; */
   border: none;
   border-radius: 5px;
   padding: 4px 8px;
@@ -179,7 +167,6 @@ textarea {
   }
 
   .icon {
-    /* color: #61AFEF; */
     color: black;
     transition: color 0.25s, transform 0.25s;
     margin: 8px 20px;
@@ -201,9 +188,6 @@ textarea {
     display: flex;
     flex-direction: column;
     max-width: 65vw;
-    /* align-items: center;
-  justify-content: center;
-  margin: 5px; */
     padding: 25px 15px;
   }
 
@@ -214,10 +198,6 @@ textarea {
   }
 
   .input {
-    /* margin: 15px 5px;
-  padding: .2em; */
-    /* min-width: 25vw;
-  background-color: #c7cfdf; */
     border-radius: 3px;
     position: relative;
     width: 100%;
@@ -247,7 +227,6 @@ textarea {
   .inputBox textarea:valid~span,
   .inputBox textarea:focus~span {
     color: white;
-    /* color: #98C379; */
     transform: translateX(-10px) translateY(-34px);
     font-size: 0.75em;
   }
@@ -281,7 +260,6 @@ textarea {
 
   .button {
     background-color: #61AFEF;
-    /* background-color: #ABB2BF; */
     border: none;
     border-radius: 5px;
     padding: 4px 8px;
