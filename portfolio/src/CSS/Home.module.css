@@ -1,7 +1,7 @@
 .main {
   color: white;
   padding: 15vh 0;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -12,11 +12,18 @@
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
-  width: 55vw;
-  height: 50vh;
-  padding: 10px 50px;
+  width: 60vw;
+  height: 70vh;
+  padding: 20px 50px;
+  margin: 25px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(171, 178, 191, 0.2);
+  border-radius: 15px;
 }
 
 .link {

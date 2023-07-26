@@ -6,27 +6,28 @@ function Home({mouseOverEvent, mouseOutEvent}) {
   return (
     <div className={styles.main}>
 
-      <h3>Why hello there!</h3>
 
       <div className={styles.content}>
+        <h3>Why hello there!</h3>
+
 
         <p>Welcome to my portfolio site.</p>
             
-          <br />
+          
         <p>
             Among other things, I am a budding software engineer who recently graduated from Fullstack Academy.
         </p>
 
-            <br />
+            
         <p>
             After nearly two decades in customer service I'm looking for a new challenge where I can apply the skills I've developed over my career and apply myself towards honing a new skillset. 
         </p>
-            <br />
+            
         <p>
             When I'm not working on projects or Codewars, I'm usually hanging out with my wife and son, playing guitar, or training Brazilian Jiu-Jitsu.  
         </p>
 
-          <br />
+          
 
           <p>
           Please feel free to browse my portfolio 

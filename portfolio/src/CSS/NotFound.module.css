@@ -20,3 +20,14 @@
   color: white;
   margin: 1em 0;
 }
+
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(171, 178, 191, 0.2);
+  border-radius: 15px;
+  width: 25%;
+  padding: 25px;
+}
