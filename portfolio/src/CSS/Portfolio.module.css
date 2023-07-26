@@ -94,13 +94,11 @@ html {
   }
 
   .description {
-    border: 1px solid red;
     height: 65vh;
     width: 100vw;
   }
 
   .video {
-    border: 1px solid red;
     height: 35vh;
     width: 100vw;
 
