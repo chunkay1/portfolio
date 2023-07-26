@@ -10,26 +10,23 @@ function Home({mouseOverEvent, mouseOutEvent}) {
       <div className={styles.content}>
         <h3>Why hello there!</h3>
 
-
-        <p>Welcome to my portfolio site.</p>
+        <p>Welcome to my personal site.</p>
             
           
         <p>
-            Among other things, I am a budding software engineer who recently graduated from Fullstack Academy.
+          Among other things, I am a budding software engineer who recently graduated from Fullstack Academy.
         </p>
 
             
         <p>
-            After nearly two decades in customer service I'm looking for a new challenge where I can apply the skills I've developed over my career and apply myself towards honing a new skillset. 
+          After almost two decades in the customer service industry, I'm now eagerly seeking a new and exciting challenge in the tech world. I am eager to leaverage the valuable skills I have cultivated throughout my career while dedicating myself to mastering a fresh and dynamic set. 
         </p>
             
         <p>
-            When I'm not working on projects or Codewars, I'm usually hanging out with my wife and son, playing guitar, or training Brazilian Jiu-Jitsu.  
+          When I'm not working on projects or upping my Codewars kata, I'm usually hanging out with my wife and son, playing guitar, or training Brazilian Jiu-Jitsu.
         </p>
 
-          
-
-          <p>
+        <p>
           Please feel free to browse my portfolio 
             <a 
               className={styles.link}
@@ -43,14 +40,10 @@ function Home({mouseOverEvent, mouseOutEvent}) {
               onMouseOver={mouseOverEvent}
               onMouseOut={mouseOutEvent} 
               href={`${BASEURL}contact`}> contact page.</a>
-          </p>
+        </p>
           
 
           {/* Use this site as an inspiration - https://brittanychiang.com/#about */}
-
-          {/* <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
-          </p> */}
 
       </div>
 
