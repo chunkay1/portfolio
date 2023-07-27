@@ -34,9 +34,6 @@
   color: #282C34;
 }
 
-/* use this link to create reactive navbar
-https://blog.logrocket.com/create-responsive-navbar-react-css/ */
-
 @media screen and (max-width: 650px) {
 
   .nameAndTitle>h5 {

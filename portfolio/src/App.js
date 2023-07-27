@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import {Routes, Route} from 'react-router'
 import { useEffect, useRef } from 'react';
 import './App.css';
@@ -194,12 +193,11 @@ function App() {
       </div> 
       
         <header className="App-header">
-          {/* <div ref={dotOutline} className= "cursor-dot-outline"></div>
-          <div ref={dot} className="cursor-dot"></div> */}
+
           <Nav 
             mouseOverEvent={mouseOverEvent}
             mouseOutEvent={mouseOutEvent}/>
-            
+
         </header>
 
         <Routes>
@@ -210,9 +208,11 @@ function App() {
                 
                 <div ref={dotOutline} className= "cursor-dot-outline"></div>
                 <div ref={dot} className="cursor-dot"></div>
+
                 <Home 
                   mouseOverEvent={mouseOverEvent}
                   mouseOutEvent={mouseOutEvent}/>
+
               </main>
             </>
           }/>
@@ -226,6 +226,7 @@ function App() {
                 <Home 
                   mouseOverEvent={mouseOverEvent}
                   mouseOutEvent={mouseOutEvent}/>
+
               </main>
             </>
           }/>
@@ -241,20 +242,6 @@ function App() {
                   mouseOverEvent={mouseOverEvent}
                   mouseOutEvent={mouseOutEvent}/>
 
-                {/* <img src={logo} className="App-logo" alt="logo" />
-
-                <p>
-                  Edit <code>src/App.js</code> and save to reload.
-                </p>
-
-                <a
-                  className="App-link"
-                  href="https://reactjs.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                Learn React
-                </a> */}
               </main>
             </>
           }/>
@@ -262,28 +249,30 @@ function App() {
           <Route exact path='/contact' element={
             <>
               <main className="App-main">
+
                 <div ref={dotOutline} className= "cursor-dot-outline"></div>
                 <div ref={dot} className="cursor-dot"></div>
                 <Contact
                   mouseOverEvent={mouseOverEvent}
                   mouseOutEvent={mouseOutEvent}/>
+
               </main>
             </>
           }/>
           
           <Route path='/*' element={
             <>
+            
               <div ref={dotOutline} className= "cursor-dot-outline"></div>
               <div ref={dot} className="cursor-dot"></div>
               <NotFound
                 mouseOverEvent={mouseOverEvent}
                 mouseOutEvent={mouseOutEvent} />
+
             </>
           } />
           
         </Routes>
-
-      
 
     </div>
   );

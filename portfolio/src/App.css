@@ -26,7 +26,6 @@
   .cursor-dot-outline {
     visibility: hidden;
   }
-
 }
 
 .cursor-dot {
@@ -48,12 +47,6 @@
   background-attachment: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: transparent;
   min-height: 8vhh;
@@ -70,7 +63,6 @@
   overflow: hidden;
   top: 0;
   z-index: 100;
-
 }
 
 .App-main {
