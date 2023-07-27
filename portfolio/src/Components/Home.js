@@ -6,17 +6,14 @@ function Home({mouseOverEvent, mouseOutEvent}) {
   return (
     <div className={styles.main}>
 
-
       <div className={styles.content}>
         <h3>Why hello there!</h3>
 
         <p>Welcome to my personal site.</p>
             
-          
         <p>
           Among other things, I am a budding software engineer who recently graduated from Fullstack Academy.
         </p>
-
             
         <p>
           After almost two decades in the customer service industry, I'm now eagerly seeking a new and exciting challenge in the tech world. I am eager to leaverage the valuable skills I have cultivated throughout my career while dedicating myself to mastering a fresh and dynamic set. 
@@ -41,9 +38,6 @@ function Home({mouseOverEvent, mouseOutEvent}) {
               onMouseOut={mouseOutEvent} 
               href={`${BASEURL}contact`}> contact page.</a>
         </p>
-          
-
-          {/* Use this site as an inspiration - https://brittanychiang.com/#about */}
 
       </div>
 

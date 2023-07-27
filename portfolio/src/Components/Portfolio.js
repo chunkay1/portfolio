@@ -4,50 +4,22 @@ import { AiFillGithub } from "react-icons/ai";
 import { SiExpress, SiPostgresql, SiReact, SiCss3, SiJquery } from "react-icons/si"
 import { FaNodeJs, FaBootstrap } from "react-icons/fa"
 import { animate, motion, useAnimation, useInView } from "framer-motion";
-// import { useInView } from 'react-intersection-observer';
-
 
 function Portfolio ({mouseOverEvent, mouseOutEvent}) {
-
-  // const control = useAnimation();
-  // const ref = useInView();
-
   const ref = useRef(null);
   const isInView = useInView(ref);
   const mainControls = useAnimation();
-  // const { ref, entry } = useInView({ trackVisibility: true, delay: 100 })
   
   useEffect( () => {
     isInView ?
     mainControls.start("visible")
     :
-    console.log('out of view')
+    console.log('')
   }, [isInView] );
-
-  // const boxVariant = {
-  //   hidden: { 
-  //     opacity: 0, 
-  //     x: 75
-  //   },
-  //   visible: { 
-  //     opacity: 1, 
-  //     x: 0, 
-  //     transition: { duration: 0.5, delay: 0.1} 
-  //   },
-  // }
-
-  // useEffect(() => {
-  //   if (inView) {
-  //     control.start("visible");
-  //   } else {
-  //     control.start("hidden");
-  //   }
-  // }, [control, inView]);
 
   return (
     <div className={styles.body}>
       
-
       <section 
         className={styles.project}
         ref={ref}>
@@ -65,7 +37,6 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
                   Hike & Seek
               </a>
             </h4>
-            
 
             <p>For the Fullstack Academy Capstone Project, our team built an e-commerce site geared towards outdoor enthusiasts.</p>
 
@@ -80,37 +51,30 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
             <div className={styles.technologies}>
 
               <div>
-                {/* <h5>PostgreSQL</h5> */}
                 <SiPostgresql />
               </div>
 
               <div>
-                {/* <h5>Express</h5> */}
                 <SiExpress />
               </div>
 
               <div>
-                {/* <h5>React</h5> */}
                 <SiReact />
               </div>
 
               <div>
-                {/* <h5>Node JS</h5> */}
                 <FaNodeJs />
               </div>
 
               <div>
-                {/* <h5>CSS</h5> */}
                 <SiCss3 />
               </div>
 
               <div>
-                {/* <h5>Bootstrap</h5> */}
                 <FaBootstrap />
               </div>
 
               <div>
-                {/* <h5>jQuery</h5> */}
                 <SiJquery />
               </div>
 
@@ -155,14 +119,6 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
                 <source src="HaS_Demo.mp4" type="video/mp4"/> 
             </video>
         </motion.div>
-        
-        {/* <motion.div 
-          className={`box ${styles.video}`}
-          variants={boxVariant}
-          initial="hidden"
-          animate="visible">
-          <h2>Test</h2>
-        </motion.div> */}
 
       </section>
 
@@ -195,11 +151,15 @@ function Portfolio ({mouseOverEvent, mouseOutEvent}) {
             <p>Overall, this project allowed me to apply my knowledge of React and API interactions to build a functional and responsive web application that simulates a popular online marketplace. I learned how to manage state and props in React, use hooks and libraries for enhanced functionality, and implement CRUD methods for data manipulation.</p>
 
             <div className={styles.technologies}>
-              {/* <h5>React</h5> */}
-              <SiReact />
 
-              {/* <h5>CSS</h5> */}
-              <SiCss3 />
+              <div>
+                <SiReact />
+              </div>
+
+              <div>
+                <SiCss3 />
+              </div>
+              
             </div>
 
             <div className={styles.icon}>
