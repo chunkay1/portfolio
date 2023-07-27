@@ -1,5 +1,5 @@
 import { useRef } from "react";
 
-export const BASEURL = 'http://localhost:3000/';
+export const BASEURL = 'https://fabians-portfolio.onrender.com/';
 
 {/* Use this site as an inspiration - https://brittanychiang.com/#about */}
