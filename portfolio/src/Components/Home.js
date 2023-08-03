@@ -16,7 +16,7 @@ function Home({mouseOverEvent, mouseOutEvent}) {
         </p>
             
         <p>
-          After almost two decades in the customer service industry, I'm now eagerly seeking a new and exciting challenge in the tech world. I am eager to leaverage the valuable skills I have cultivated throughout my career while dedicating myself to mastering a fresh and dynamic set. 
+          After almost two decades in the customer service industry, I'm now eagerly seeking a new and exciting challenge in the tech world. I am eager to leverage the valuable skills I have cultivated throughout my career while dedicating myself to mastering a fresh and dynamic set. 
         </p>
             
         <p>
